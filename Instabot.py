@@ -101,5 +101,3 @@ class InstaBot:
     def __getUsername(self):
         return input("Input your username: "), getpass("Enter your password: ")
 
-InstaBot("./geckodriver").login()
-
