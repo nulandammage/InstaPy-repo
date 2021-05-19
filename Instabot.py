@@ -1,4 +1,12 @@
-from selenium import webdriver
+from datetime import datetime
+from selenium.webdriver import Firefox
+from selenium.webdriver.firefox.options import Options
 
-print("Done")
+
+timenow = datetime.now()
+browser = Firefox("./geckodriver")
+browser.get("https://www.instagram.com/")
+time.sleep(5)
+browser.close()
+print(datetime.now() - timenow)
 
